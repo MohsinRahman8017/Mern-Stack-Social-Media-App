@@ -1,0 +1,551 @@
+.Post-Section-Wrapper{
+    width: 100%;
+    /* height: calc(100vh - 54px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Post-Filter-Wrapper{
+    width: 72%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  var(--background-color);
+    box-shadow: 0px 0px 3px #80808082;
+
+}
+
+.Post-Title{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Post-Title h2 {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Acumin';
+    letter-spacing: 2px;
+}
+
+.Post-Filter-Buttons{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Post-Filter-Buttons ul{
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+.Post-Filter-Buttons ul li{
+    cursor: pointer;
+    font-family: "Acumin";
+    position: relative;
+}
+
+.Post-Filter-Buttons ul li::after{
+    content:"";
+    width: 0%;
+    height: 3px;
+    background-color: var( --text-black);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.Post-Filter-Buttons ul li:hover::after{
+    content:"";
+    width: 100%;
+    height: 3px;
+    background-color: var( --text-black);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+/********POST OUTER SECTION WRAPPER**********/
+
+.Post-Outer-Wrapper{
+    width: 100%;
+    /* height: calc(100% - 10% ); */
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    margin-top: 12px;
+}
+
+.Post-Data-Wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 6px #80808063;
+    width: 621px;
+
+}
+
+
+/*****Photo Videos****/
+.Post-Data-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.Post-Data-Actions{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.Post-User-Profile{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.Post-Profile-Pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.Post-User-Profile h2{
+    font-size: 16px;
+    font-family: 'Acumin';
+    font-weight: 600;
+}
+
+.Post-User-action-btn{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.Post-Love-Btn{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.Post-Love-Btn h2{
+    font-size: 17px;
+    font-family: 'Acumin';
+    font-weight: 500;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.Post-Love-Btn span{
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
+
+.Post-Inner-Wrapper{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 2.5%;
+    gap: 20px;
+}
+
+.Post-Data-Header{
+    width: 99.2%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+
+}
+
+.Post-Data-more-btn-wrapper{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 43px;
+    right: 13px;
+    box-shadow: 0px 0px 6px #808080b5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    opacity: 1;
+    transition:  0.5s ease;
+    z-index: 10;
+    
+}
+.Post-Data-more-btn-wrapper-Hide{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 43px;
+    right: 13px;
+    box-shadow: 0px 0px 6px #808080b5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    transition:  0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.3);
+   
+
+}
+
+
+.Post-Data-btn-more{
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 2px;
+    height: 38px;
+    padding: 4px;
+
+}
+
+
+.Post-Data-btn-more:hover{
+    box-shadow: 0px 0px 6px #80808099;
+    cursor: pointer;
+}
+
+.Post-Data-btn-more span{
+    font-size: 18px;
+    font-weight: 300;
+    background-color: none;
+}
+
+#btn-more-text{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.Post-Data-Profile_Action{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.Post-Data-Profile_Action span{
+    font-size: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.Post-Data-Profile_Action span:hover{
+    background-color: rgba(128, 128, 128, 0.249);
+}
+
+.Post-Name-Location{
+    flex-direction: column;
+    display: flex;
+}
+
+.Post-Data-media{
+    width: 100%;
+    object-fit: cover;
+}
+
+/***********Post Count*****/
+
+.postaction-count{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 14px;
+    margin-top: 14px;
+
+}
+
+
+.postaction-count div{
+
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+
+#line-action{
+    background: var(--under-line);
+    width: 95%;
+    height: 1px;
+    margin: 3px auto 10px auto;
+}
+
+
+
+
+
+/******************Icons*************/
+
+.Icon-empty{
+    height: 28px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    animation-name: likeempty;
+    animation-duration: 0.5s;
+
+}
+@keyframes likeempty {
+    from{
+        transform: scale(0.7);
+        transition: 0.3s ease;
+    }
+    to{
+        transform: scale(1.2);
+        transition: 0.3s ease;
+
+    }
+    
+}
+
+.Icon-fill{
+    height: 28px;
+    cursor: pointer;
+    /* transition: 0.5s ease; */
+    transform: scale(1.2);
+    color: red;
+    animation-name: like;
+    animation-duration: 0.5s;
+}
+
+@keyframes like {
+    from{
+        transform: scale(0.7);
+        transition: 0.3s ease;
+    }
+    to{
+        transform: scale(1.2);
+        transition: 0.3s ease;
+
+    }
+    
+}
+
+
+#expand{
+    position: absolute;
+    top: 41%;
+    left: 39%;
+    background: black;
+    color: white;
+    padding: 36px 47px;
+    text-transform: capitalize;
+    font-family: system-ui;
+    opacity: 0;
+    cursor: pointer;;
+
+}
+
+
+.Post-data-user-text{
+    width: 100%;
+    min-height: 0%;
+    text-align: center;
+    max-height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 9px;
+    font-family: 'Acumin';
+    font-size: 16px;
+
+}
+
+.Post-Comment-Wrapper{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    transition: 0.3s ease;
+    flex-direction: column;
+    padding: 11px 0px;
+    gap: 10px;
+}
+
+.Post-Comment-Wrapper-Hide{
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    flex-direction: column;
+    padding: 11px 0px;
+
+}
+
+
+
+/******Media Queriees******/
+
+@media (min-width:650px) {
+
+    .Post-Data-Wrapper{
+        width: 75%;
+        height: 70%;
+    }
+
+    .Post-Data-photo{
+        height: 460px;
+    }
+
+}
+@media (min-width:700px) {
+
+    .Post-Data-Wrapper{
+        width: 96%;
+        height: 97%;
+    }
+
+    .Post-Data-photo{
+        height: 501px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .Post-Data-Wrapper{
+        width: 105%;
+        height: 105%;
+        box-shadow: none;
+    }
+
+    .Post-User-Profile{
+        width: 40%;
+    }
+
+    .Post-Title{
+        width: 21%;
+    }
+
+    .Post-Filter-Buttons{
+        width: 63%;
+        justify-content: flex-end;
+    }
+
+    .Post-User-Profile{
+        width: 70%;
+    }
+
+    .Post-Filter-Wrapper{
+        width: 98%;
+    }
+    .postaction-count{
+        align-items: center;
+        padding: 3px 14px;
+    }
+    .Post-Data-Actions{
+        padding: 0px 6px;
+        margin-top: 4px;
+    }
+
+    .Post-Love-Btn{
+        margin-top: 15px;
+    }
+  
+}
+
+
+@media (min-width:1200px) {
+    .Post-Section-Wrapper{
+        display: flex;
+    }
+    .Post-Outer-Wrapper{
+        flex-direction: row;
+    }
+
+    .Post-Inner-Wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px 34px;
+        justify-content: center;
+    }
+
+    .Post-Data-Wrapper{
+        justify-content: center;
+        /* height: 501px; */
+        height: auto;
+        width: 83%;
+    }
+
+    .Post-Title{
+        margin-left: 7%;
+        justify-content: flex-start;
+    }
+
+    .Post-Filter-Buttons{
+        margin-right: 8%;
+        justify-content: flex-end;
+        height: 13%;
+    }
+
+    .Post-User-Profile{
+        width: 70%;
+    }
+  
+    
+}
+
+
+@media (min-width:350px) {
+   .Post-Filter-Wrapper{
+    justify-content: unset;
+    gap: 13%;
+   }
+}
+
+@media (min-width:450px) {
+    .Post-Filter-Wrapper{
+      justify-content: space-between;
+      gap: 0;
+    }
+}

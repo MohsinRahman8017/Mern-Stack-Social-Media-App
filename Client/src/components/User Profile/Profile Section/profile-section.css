@@ -1,0 +1,380 @@
+.Profile-Section-Wrapper{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    background: var(--middle-background);
+    position: absolute;
+    left: 21.1%;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+.Profile-Top-Details-Section{
+    width: 100%;
+    height: 291px;
+    /* height: 44%; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #80808066; */
+    align-items: center;
+    padding-top: 11px;
+    gap: 10px;
+}
+
+.Profile-Banner-Outer-Wrapper{
+    width: 95%;
+    height: 195px;
+    background: #252121;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+
+}
+.Profile-Banner-Wrapper{
+    width: 100%;
+    height: 195px;
+    /* width: 770px;
+    height: 750px; */
+    background: gray;
+    display: flex;
+    border-radius: 4px;
+
+}
+
+
+/********Edit Profile Banner **********/
+.Edit-Profile-Banner{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2%;
+    bottom: 8%;
+    cursor: pointer;
+    color: black;
+}
+
+
+.Edit-Profile-Banner span:hover{
+    color: blue;
+
+}
+
+.Banner-Edit{
+    position: absolute;
+    width: 59px;
+    font-size: 24px;
+    opacity: 0;
+    pointer-events:all;
+}
+
+
+/********DP SEction**********/
+
+.Profile-DP-Section{
+    width: 95%;
+    /* height: calc(100% - 65%); */
+    display: flex;
+    align-items: center;
+    height: 25%;
+
+}
+
+.Profile-DP-Wrapper{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.Profile-DP{
+    width: 64px;
+    height: 65px;
+    background: gray;
+    border-radius: 55px;
+    background-size:'cover';
+
+}
+
+/**********Profile Personal Info*******/
+
+.Profile-Personal-Info{
+    width: 70%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 6px;
+    justify-content: center;
+}
+
+.Profile-Personal-Info :first-child{
+    font-size: 19px;
+    font-family: 'Acumin';
+    font-weight: 500;
+}
+
+.Profile-Personal-Info :last-child{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+/********Post Creating Section ***********/
+
+.Create-Post-Wrapper{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.Create-Post-Btn-Wrapper{
+    width: 119px;
+    height: 41px;
+    background: var(--sky-blue-btn);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color:var(--btn-text-white);
+    gap: 2px;
+    cursor: pointer;
+   
+
+}
+
+.Create-Post-Btn-Wrapper:hover{
+    background-color: var(--sky-blue-hover-btn);
+}
+
+.Create-Post-Btn-Wrapper:first-child{
+    font-size: 17px;
+}
+
+.Create-Post-Btn-Wrapper:first-child{
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 4px;
+
+}
+
+#Edit{
+    font-size: 24px;
+    background: var(--sky-blue-btn);
+    color: var(--btn-text-white);
+    padding: 9px;
+    border-radius: 36px;
+    cursor: pointer;
+}
+
+#Edit:hover{
+    background-color: var(--sky-blue-hover-btn);
+}
+
+/***********Profile Post Sections*********/
+.Profile-Post-Section-Wrapper{
+    width: 100%;
+    height: calc(100% - 44%);
+    display: flex;
+    flex-direction: column;
+}
+
+.Upload-Post-Outer-Wrapper-Hide{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition:  0.4s ;
+    transform: scale(.2);
+}
+
+.Upload-Post-Outer-Wrapper-Hide div{
+    opacity: 0;
+}
+
+.Upload-Post-Outer-Wrapper-Display{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(128, 128, 128, 0.486);
+    z-index: 10;
+    opacity: 1;
+    transition:  0.4s;
+
+}
+
+.Upload-Post-Outer-Wrapper-Display div{ 
+    opacity: 1;
+}
+
+
+.Post-View-Outer-Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #87878742;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    transition: 0.5s ;
+
+}
+
+.Post-View-Outer-Wrapper-Hide{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #87878742;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;   
+     transition: 0.3s;
+     transform: scale(.0);
+
+
+}
+
+
+
+.Profile_Pic_Wrapper_Hide{
+    width: 0%;
+    height: 0%;
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    opacity: 0;
+    pointer-events:none;
+    background:gray;
+    background: #baa7a754;
+    backdrop-filter: blur(1px);
+    transition: 0.3s ease;
+    transform: scale(0.3);
+}
+
+.Profile_Pic_Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    background:gray;
+    background: #baa7a754;
+    backdrop-filter: blur(1px); transition: 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/***********Media Queries***************/
+
+@media (max-width:550px) {
+    .Profile-Section-Wrapper{
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 8%;
+        height: 83%;
+    }
+    .Profile-Banner-Wrapper{
+        width: 101%;
+        height: 124px;
+    }
+    .Edit-Profile-Banner{
+        top: 8%;
+    }
+    .Profile-DP-Section{
+        height: 39%;
+        width: 93%;
+    }
+    .Profile-DP{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .Profile-Top-Details-Section{
+        height: 42%;
+        position: relative;
+        gap: 0px;
+
+    }
+  
+
+    .Profile-DP{
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        top: 66px;
+        left: 27px;
+        border: 2px solid white;
+    }
+  
+    .Profile-Personal-Info :first-child{
+        font-size: 20px;
+    }
+    .Profile-Personal-Info :last-child{
+        font-size: 12px;
+    }
+    .Create-Post-Wrapper{
+        width: 38%;
+    }
+    .Create-Post-Btn-Wrapper{
+        width: 100px;
+        height: 39px;
+        display: flex;
+    }
+
+    .Create-Post-Btn-Wrapper:first-child{
+        font-size: 9px;
+    }
+    #Edit{
+        padding: 10px;
+        font-size: 23px;
+    }
+
+    .Profile-Section-Wrapper{
+        top:11%;
+    }
+
+    .Profile-DP-Section{
+        height: 38%;
+        align-items: baseline;
+    }
+    
+    .Profile-DP-Wrapper{
+        width: 65%;
+    }
+
+    .Profile-Banner-Outer-Wrapper{
+        height: 124px;
+    }
+
+
+}

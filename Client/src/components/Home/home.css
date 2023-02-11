@@ -1,0 +1,30 @@
+
+.Post-Section-Outer-Most-Wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0px;
+    background-color: var(--middle-background);
+    gap: 21px;
+
+}
+
+
+@media (min-width:1000px) {
+    .Post-Section-Outer-Most-Wrapper{
+        width: 59%;
+        position: absolute;
+        left:18.2%;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width:1000px) {
+    .Post-Section-Outer-Most-Wrapper{
+        background-color: var(--background-small);
+    }
+}

@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Acumin;
+    src: url(/public/fonts/Acumin-Variable-Concept.ttf);
+}
+
+.Left-Side-Bar-Wrapper{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0px 1px 6px #80808087; */
+    position: fixed;
+    top: 0;
+    background-color: var(--background-color);
+}
+
+.Left-Side-Bar-Logo{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Left-Side-Bar-Logo h2{
+    font-size: 31px;
+    font-family: Acumin;
+    font-weight: 600;
+    margin-right: 12%;
+}
+
+.Left-Side-Bar-Menu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.Left-Side-Bar-Menu-Title{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Left-Side-Bar-Menu-Title h2{
+    font-size: 16px;
+    font-family: 'Acumin';
+    letter-spacing: 2px;
+    margin-right: 28%;
+}
+
+.Left-Side-Bar-Actions{
+    width: 100%;
+    height: calc(100% - 14px);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.Left-Side-Bar-Acions-Wrappers{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.5s ease
+}
+
+.Left-Side-Bar-Acions-Wrappers div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.Left-Side-Bar-Acions-Wrappers:hover{
+    /* box-shadow: 0px 3px 6px rgb(128 128 128 / 49%); */
+    cursor: pointer;
+    
+}
+
+.Left-Side-Bar-Acions-Wrappers:hover span {
+    color: #0053fff2;
+}
+
+.Left-Side-Bar-Acions-Wrappers:hover h2 {
+    color: #0053fff2;}
+
+.Left-Side-Bar-Acions-Wrappers span{
+    font-size: 30px;
+}
+
+.Left-Side-Bar-Acions-Wrappers h2{
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+
+/**********Account*********/
+
+.Left-Side-Bar-Account{
+    width: 100%;
+    height: calc(100% - 63%);
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+}
+
+.Side-Bar-Account-Wrapper{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Theme-Mode{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.Theme-Button{
+    width: 95px;
+    height: 36px;
+    border-radius: 43px;
+    background: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: 1px 0px 3px #808080f0;
+    margin-left: 21%;
+    background: #80808017;
+
+
+}
+
+.Theme-Button button{
+    padding: 18px;
+    background: none;
+    border-radius: 34px;
+    position: absolute;
+    top: 0;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 8px #8080809c;
+    top: 0px;
+    left: 3px;
+    cursor: pointer;
+
+}
+
+.Translate-Left{
+    transform: translate(50px, 0px);
+    transition: all 0.5s ease;
+}
+
+.Translate-Right{
+    transform: translate(-3px, 0px);
+    transition: all 0.5s ease;
+}
+
+/********UserACcount*****/
+
+.User-Account-Wrapper{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
+    gap: 10px;
+}
+
+.User-Account-Wrapper span{
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.Profile-Outer-line{
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Profile-Image{
+    width: 93%;
+    height: 94%;
+    border-radius: 67px;
+    background: gray;
+    cursor: pointer;
+}
+
+.User-Account-Wrapper h2{
+    font-size: 16px;
+    font-family: 'Acumin';
+    color: var(--black);
+    cursor: pointer;
+}
+
+/*****MEDIA QUERIES**********/
+
+
+@media (max-width:900px) {
+    .Left-Side-Bar-Wrapper{
+        display: none;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .Translate-Left{
+        transform:translate(37px, 0px);
+    }
+    
+}

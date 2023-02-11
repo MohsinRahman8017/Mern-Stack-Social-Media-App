@@ -1,0 +1,256 @@
+
+@font-face {
+    font-family: Acumin;
+    src: url(/public/fonts/Acumin-Variable-Concept.ttf);
+}
+
+
+.Register-Left-Outer-Wrapper{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #9a7e7e4f;
+}
+
+
+.Register-Right-Outer-Wrapper{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 6px #8080808f;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Register-Main-Wrapper{
+    width: 64%;
+    height: 90%;
+    margin: 5% 18%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px #808080d4;
+}
+
+/*********Title*********/
+
+.Register-Title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 19%;
+}
+
+.Register-Title h2{
+    font-family: Acumin;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+/******Login Form*******/
+
+.Register-Form-Wrapper{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Register-Form-Wrapper form{
+    width: 100%;
+    height: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+
+.Register-Input{
+    width: 90%;
+    margin: 0% 5%;
+    height: 18%;
+    border: 1px solid #80808059;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Register-Input span{
+    color: #454545cf;
+    font-size: 23px;
+    font-weight: 200;
+
+}
+
+.Register-Input input{    
+    height: 61%;
+    border: none;
+    background: none;
+    font-size: 14px;
+    width: 85%;
+    outline: none;
+
+}
+
+/**********Register***********/
+
+.Register-Action{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background: #0095ffd1;
+    color: white;
+    /* font-weight: 500; */
+    font-family: 'Acumin';
+    font-size: 15px;
+
+}
+
+.Register-Action:hover{
+    cursor: pointer;
+    background: #0095fff1;
+
+}
+
+/***************Others Info**********/
+
+.Register-others-info{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Register-others-Login{
+    width: 100%;
+    height: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.Register-others-Login h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: #005eff;
+    cursor: pointer;
+
+}
+
+.Register-Login-or{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Register-Login-or h2{
+    font-weight: 400;
+    font-family: revert;
+    font-size: 21px;
+}
+
+/***************Left-Side-Bar***********/
+
+.Register-Left-Text-Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+}
+
+.Register-Left-Text{
+    width: 73%;
+    height: 15%;
+    position: absolute;
+    top: 72px;
+    display: flex;
+    left: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Register-Login{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Register-Login h2{
+    font-size: 50px;
+    font-family: 'Acumin';
+    letter-spacing: 3px;
+    color: white;
+
+}
+
+.Tag-Line{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tag-Line p{
+    font-size: 17px;
+    font-family: 'Acumin';
+    letter-spacing: 1px;
+    color: white;
+}
+
+.Register-Filter-Photo{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.5);
+}
+/**************Media Queries**************/
+@media (max-width:700px) {
+    .Register-Left-Outer-Wrapper{
+        display: none;
+    }
+
+    .Register-Right-Outer-Wrapper{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:700px) {
+    .Register-Left-Outer-Wrapper{
+        display: none;
+    }
+
+}
+
+@media (max-width:1100px) {
+    .Register-Main-Wrapper{
+        width: 70%;
+    }
+    
+}
+
+
+@media (max-width:450px) {
+    .Register-Main-Wrapper{
+       width: 94%;
+       height: 91%;
+}
+    
+    
+}
+
+

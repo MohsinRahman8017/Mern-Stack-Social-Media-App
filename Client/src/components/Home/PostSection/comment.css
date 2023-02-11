@@ -1,0 +1,36 @@
+.logged-user-comment{
+    width: 94%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px auto;
+    gap: 12px;
+}
+
+.logged-user-comment img{
+    height: 32px;
+    border-radius: 97px;
+    object-fit: cover;
+    width: 31px;
+}
+
+.logged-user-comment input{
+    background: #4861653d;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    width: 75%;
+    padding: 8px;
+    font-size: 14px;
+    color: var(--black);
+    
+
+}
+
+.logged-user-comment span{
+    color: var(--sky-blue-hover-btn);
+    font-size: 28px;
+    cursor: pointer;
+}
+

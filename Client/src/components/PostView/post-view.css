@@ -1,0 +1,294 @@
+.Post_View_Inner_Wrapper{
+    width: 90%;
+    height: 90%;
+    margin: 2% 5%;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Post_View-Post_Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    position: relative;
+}
+
+.Post_View_Photo_Video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.Post_View-Post_Wrapper span{
+    position: absolute;
+    top: 10px;
+    background: #2c2a2a;
+    padding: 8px;
+    border-radius: 34px;
+    left: 12px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.Post_View-Post_Wrapper span:hover{
+    background-color: #4b4949e9;
+}
+
+.Post_View_Details_Wrapper{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Post_View_User_Header{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+
+}
+
+.Post_View_Profile_Details{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 3%;
+
+}
+
+.Post_View_Profile_Details img{
+    height: 50px;
+    border-radius: 45px;
+    object-fit: cover;
+}
+
+.Post_View_Profile_Details div{
+    width: 75%;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+ #firstChild{
+    font-family: 'Acumin';
+    font-size: 15px;
+}
+
+#secondChild{
+    font-family: sans-serif;
+    font-size: 11px;
+
+}
+
+.Post-View_Profile_Action{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 7px;
+    position: relative;
+}
+
+.Post-View_Profile_Action span{
+    font-size: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.Post-View_Profile_Action span:hover{
+    background-color: #8080804d;
+    border-radius: 20px;
+    padding: 1px;
+
+}
+
+.Post_View_User_Description{
+    width: 100%;
+    min-height: 10%;
+    display: flex;
+    padding: 0px 14px;
+
+}
+
+.Post_View_User_Description p{
+    font-family: system-ui;
+    font-size: 13px;
+    font-weight: 100;
+
+}
+
+.Post_View_Action_Btn_Wrapper{
+    width: 100%;
+    min-height: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Post_Action_Btn_Count{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 24px;
+    gap: 24%;
+}
+
+.Post_Action_Btn_Love{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    min-width: 10%;
+}
+
+
+
+#smalltext{
+    font-family: "Acumin";
+    font-size: 15px;
+}
+
+.Post_Action_Btn{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 27px;
+    gap: 15%;
+}
+
+#under-line{
+    width: 94%;
+    height: 1px;
+    background: #999696e2;
+
+}
+
+.Post_Action_Btn div{
+    display: flex;
+    gap: 4px;
+    font-family: system-ui;
+
+}
+
+
+.more-btn-wrapper{
+    width: 103px;
+    height: 97px;
+    position: absolute;
+    top: 60px;
+    right: 18px;
+    box-shadow: 0px 0px 6px #808080b5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    opacity: 1;
+    transition:  0.5s ease;
+    
+}
+.more-btn-wrapper-Hide{
+    width: 0px;
+    height: 97px;
+    position: absolute;
+    top: 53px;
+    right: 18px;
+    box-shadow: 0px 0px 6px #808080b5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    transition:  0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.3);
+}
+
+
+.btn-more{
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 2px;
+    height: 38px;
+    padding: 4px;
+
+}
+
+
+.btn-more:hover{
+    box-shadow: 0px 0px 6px #80808099;
+    cursor: pointer;
+}
+
+.btn-more span{
+    font-size: 18px;
+    font-weight: 300;
+    background-color: none;
+}
+
+#Post-Data-btn-more-text{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+@media (max-width:500px) {
+    .Post_View_Inner_Wrapper{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+
+    }
+    .Post_View-Post_Wrapper{
+        width: 100%;
+        min-height: 65%;
+        max-height: 70%;
+    }
+    .Post_View_Details_Wrapper{
+        width: 100%;
+        height: calc(100% - 45%);
+    }
+
+    .Post-View_Profile_Action{
+        margin: 0px;
+    }
+
+    .Post_View_Profile_Details{
+        margin: 0px 7px;
+    }
+
+    .Post_Action_Btn_Count{
+        gap: 29%;
+    }
+
+    .Post_Action_Btn{
+        gap: 25%;
+    }
+
+    .Post_View_Action_Btn_Wrapper{
+        gap: 5px;
+    }
+
+ 
+  
+    
+}

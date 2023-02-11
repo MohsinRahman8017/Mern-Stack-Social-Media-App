@@ -1,0 +1,56 @@
+
+:root{
+  --white: #ffffff;
+  --black: #000000;
+  --gray:#ada4a4;
+  --dark:#1a1c26;
+  --light-blue:#a38bfc;
+  --background-color:var(--white);
+  --blue :blue;
+  --middle-background:#a38bfc14;
+  --background-small:var(--dark);
+  --sky-blue-btn:#0043ff;
+  --sky-blue-hover-btn:#0044ffe6;
+  --btn-text-white:var(--white);
+  --text-color-white: var(--white);
+  --text-black:var(--black);
+  --under-line:#0000002b
+}
+
+.BodyLight {
+  --background-small:var(--white);
+  --black: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  
+}
+.BodyDark {
+  --text-black:white;
+  --sky-blue-btn:var(--white);
+  --text-color-white :black;
+  --sky-blue-hover-btn:rgba(255, 255, 255, 0.876);
+  --btn-text-white:black;
+  --blue :var(--white);
+  --black:var(--white);
+  --background-color:var(--dark);
+  --middle-background:none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 0;
+   margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

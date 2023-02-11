@@ -1,0 +1,277 @@
+.Login-Outer-Most-Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@font-face {
+    font-family: Acumin;
+    src: url(/public/fonts/Acumin-Variable-Concept.ttf);
+}
+
+
+.Login-Left-Outer-Wrapper{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #9a7e7e4f;
+}
+
+
+.Login-Right-Outer-Wrapper{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 6px #8080808f;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login-Main-Wrapper{
+    width: 64%;
+    height: 90%;
+    margin:15% 18%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px #808080d4;
+}
+
+/*********Title*********/
+
+.Login-Title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 19%;
+}
+
+.Login-Title h2{
+    font-family: Acumin;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+/******Login Form*******/
+
+.Login-Form-Wrapper{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Login-Form-Wrapper form{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+
+.Login-Input{
+    width: 90%;
+    margin: 0% 5%;
+    height: 40%;
+    border: 1px solid #80808059;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Login-Input span{
+    color: #454545cf;
+    font-size: 23px;
+    font-weight: 200;
+
+}
+
+.Login-Input input{    
+    height: 61%;
+    border: none;
+    background: none;
+    font-size: 14px;
+    width: 85%;
+    outline: none;
+    color: var(--black);
+
+}
+
+
+.Forgot-Password{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Forgot-Password h3{
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--blue);
+}
+.Forgot-Password h3:hover{
+    color: blue;
+    cursor:default;
+
+}
+
+
+/**********Register***********/
+
+.Register-Action{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background: #0095ffd1;
+    color: white;
+    /* font-weight: 500; */
+    font-family: 'Acumin';
+    font-size: 15px;
+
+}
+
+.Register-Action:hover{
+    cursor: pointer;
+    background: #0095fff1;
+
+}
+
+/***************Others Info**********/
+
+.others-info{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.others-Login{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.others-Login h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blue);
+    cursor: pointer;
+
+}
+
+
+/***************Left-Side-Bar***********/
+
+.Login-Left-Text-Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+}
+
+.Login-Left-Text{
+    width: 73%;
+    height: 15%;
+    position: absolute;
+    top: 72px;
+    display: flex;
+    left: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logo-Login{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo-Login h2{
+    font-size: 50px;
+    font-family: 'Acumin';
+    letter-spacing: 3px;
+    color: white;
+
+}
+
+.Tag-Line{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tag-Line p{
+    font-size: 17px;
+    font-family: 'Acumin';
+    letter-spacing: 1px;
+    color: white;
+}
+
+.Filter-Photo{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.5);
+}
+/**************Media Queries**************/
+@media (max-width:700px) {
+    .Login-Left-Outer-Wrapper{
+        display: none;
+    }
+
+    .Login-Right-Outer-Wrapper{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:700px) {
+    .Login-Left-Outer-Wrapper{
+        display: none;
+    }
+
+}
+
+@media (max-width:1100px) {
+    .Login-Main-Wrapper{
+        width: 70%;
+    }
+    
+}
+
+
+@media (max-width:450px) {
+    .Login-Main-Wrapper{
+       width: 94%;
+       height: 91%;
+}
+      
+    .Login-Form-Wrapper form{
+        height: 45%;
+    }
+    
+    
+}
+
+

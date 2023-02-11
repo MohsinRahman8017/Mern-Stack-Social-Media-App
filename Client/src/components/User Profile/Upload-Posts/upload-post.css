@@ -1,0 +1,274 @@
+.Upload-Post-Wrapper{
+    width: 30%;
+    height: 77%;
+    background: var(--background-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    gap: 2%;
+
+}
+
+
+.Header-upload{
+    width: 100%;
+    /* height: 10%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+
+}
+
+.Header-Upload-Left{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Header-Upload-Left span{
+    font-size: 30px;
+}
+
+.Header-Upload-middle{
+    display: flex;
+    height: 100%;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header-Upload-middle span{
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.Header-Upload-right{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header-Upload-right span{
+    font-size: 32px;
+
+}
+
+.Header-Upload-right span:hover{
+    color: rgba(224, 15, 15, 0.875);
+    cursor: pointer;
+}
+
+/******Profile Upload Section ********/
+
+.Profile-Upload-Section{
+    align-items: center;
+    width: 100%;
+    /* height: 15%; */
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+
+.Profile-Upload{
+    width: 50px;
+    height: 50px;
+    background: gray;
+    border-radius: 33px;
+    margin-left: 14px;
+}
+
+.Profile-Upload-Name{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    gap: 3px;
+
+}
+
+.Profile-Upload-Name{
+    font-family: 'Acumin';
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.Profile-Upload-Select{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #625c5c;
+    border-radius: 29px;
+    justify-content: center;
+
+}
+
+.Profile-Upload-Select select{
+    width: 81px;
+    font-size: 15px;
+    font-weight: 500;
+    /* font-family: 'Acumin'; */
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: none;
+    color: var(--black);
+
+}
+ 
+/*************** Main Post Section **************/
+
+.Main-Post-Section{
+    width: 100%;
+    /* height: 60%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+}
+
+.Post-Input-Wrapper{
+    width: 95%;
+    /* height: 25%; */
+    display: flex;
+    margin: 0% 2.5%;
+    height: 60px;
+}
+
+.Post-Input-Wrapper textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Acumin';
+    padding: 10px 0px;
+    overflow: hidden;
+    background: none;
+    color: var(--black);
+    font-weight: 500;
+
+}
+
+/***********Main Post Wrapper********/
+
+.Main-Post-Outer-Wrapper{
+    width: 100%;
+    /* height: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 229px;
+    position: relative;
+}
+
+.Main-Post-Container{
+    width: 173px; 
+    width: 92%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #80808080;
+    border-radius: 5px;
+    flex-direction: column;
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-position-x:center;
+}
+
+.Main-Post-Container-Hide{
+    display: none;
+}
+
+.Upload-Button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-add-photo{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.Main-Post-Outer-Wrapper span{
+    font-size: 37px
+}
+
+.Main-Post-Outer-Wrapper input{
+    position: absolute;
+    width: 51px;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: 0;
+    top:4%;
+}
+
+.PostVideoContainer-display{
+    /* width: 173px;  */
+    width: 92%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #80808080;
+    border-radius: 5px;
+    flex-direction: column;
+    position: relative;
+    object-fit: contain;
+    object-position: top;
+    background-color: black;
+
+}
+
+.PostVideoContainer-Hide{
+    display: none;
+}
+
+
+
+
+.Post-Upload-Btn-Wrapper{
+    width: 100%;
+    height: 8%;
+}
+
+.Post-Upload-Btn-Wrapper button{
+    width: 94%;
+    height: 100%;
+    font-size: 21px;
+    margin: 0% 2.6%;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--sky-blue-btn);
+    border: none;
+    outline: none;
+    color: var(--text-color-white);
+}
+
+
+/*********Media Queries************/
+
+@media (max-width:500px) {
+    .Upload-Post-Wrapper{
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+    }
+}
+

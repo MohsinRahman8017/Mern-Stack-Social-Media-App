@@ -1,0 +1,154 @@
+.Post-Section-Filter-Wrapper{
+    width: 95%;
+    height: 12%;
+    margin: 0% 2.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.Post-Section-Filter-Wrapper button{
+    padding: 3px 8px;
+    font-size: 17px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--black);
+    position: relative;
+}
+
+.Post-Section-Filter-Wrapper button::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: var( --text-black);
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.Post-Section-Filter-Wrapper button:hover::after{
+    content: '';
+    width: 90%;
+    height: 3px;
+    background-color: var( --text-black);
+    transition: 0.3s;
+    position: absolute;
+    left: 5%;
+    bottom: -2px;
+
+}
+
+
+
+
+
+
+/***********Main Post Area************/
+
+.Post-Area-Outer-Wrapper{
+    width: 95%;
+    height: calc(100% - 12%);
+    margin: 0% 2.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.Post-Area-Outer-Wrapper-All{
+    width: 100%;
+    height: calc(100% - 12%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.Photo-Post-Wrapper{
+    /* width: 364px; */
+    height: 266px;
+    background: gray;
+    border-radius: 4px;
+    width: 48%;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.Photo-Post-Wrapper-Hide{
+    display: none;
+}
+
+.Video-Post-Wrapper{
+    height: 100%;
+    background: gray;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.Video-Post-Wrapper-Hide{
+    display: none;
+}
+
+.video-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Photo-Post-Wrapper span{
+    color: white;
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    font-size: 29px;
+    background: #000000bf;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 2px;
+
+}
+
+
+
+
+/***********Media Queries***********/
+
+@media (max-width:550px) {
+    .Photo-Post-Wrapper{
+       width: 100%;
+       height: 313px;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .Post-Section-Filter-Wrapper{
+        height: 10%;
+    }
+    .Post-Area-Outer-Wrapper{
+        height: calc(100% - 10%);
+    }
+
+    .Profile-Post-Section-Wrapper{
+        height: calc(100% - 38%);
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .Photo-Post-Wrapper{
+        width: 97%;
+        margin: 0% 1%;
+        height: 318px;
+    }
+    
+}

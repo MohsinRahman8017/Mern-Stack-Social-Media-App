@@ -1,0 +1,22 @@
+.Profile_Picture_Wrapper{
+    border-radius: 7px;
+    width: 408px;
+    height: 418px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -6px 0px 10px #06060647;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.btn_Dp_Wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

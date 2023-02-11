@@ -1,0 +1,32 @@
+.Follow{
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: gray;
+    color: white;
+    border: none;
+    background: #b2b2b2;
+    outline: none;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.Follow:hover{
+    background-color: #b2b2b2de;
+}
+
+.Unfollow{
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: gray;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    font-weight: 300;
+    cursor: pointer;
+    background: #0d01ffdb;
+}
+
+.Unfollow:hover{
+
+    background: #0e01ffbc;
+}
